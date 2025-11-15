@@ -1,16 +1,34 @@
 import './AboutMe.css'; 
+import lightbulb from '../../assets/images/lightbulb.png';
+import longlightbulb from '../../assets/images/longlightbulb.png';
+import lightbulbdark from '../../assets/images/lightbulbdark.png';
 function AboutMe() {
   return (
     <>
       <section className="brown-block">
-        <div className="light-bulb">
-            <div className="cord"></div>
-            <div className="cord-shadow"></div>
-          <div className="bulb"></div>
-        </div>
+        <img 
+          src={lightbulbdark} 
+          alt="decorative light bulb" 
+          className="light-bulb1"
+        />
+        <img 
+          src={lightbulbdark} 
+          alt="decorative light bulb" 
+          className="light-bulb2"
+        />
+        <img 
+          src={longlightbulb} 
+          alt="decorative light bulb" 
+          className="light-bulb3"
+        />
+        <img 
+          src={lightbulbdark} 
+          alt="decorative light bulb" 
+          className="light-bulb4"
+        />
         <div className="top-layer">
         <div className="semi-circle">
-          <h1 className="title">VICTORIA CAI</h1>
+          <h1 className="name">VICTORIA</h1>
         </div>
       </div>
       </section>
