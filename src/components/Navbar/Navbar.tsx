@@ -11,9 +11,9 @@ function Navbar() {
   </Link>
   <div className="nav-center">
     <nav>
-      <a href="#about">ABOUT ME</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#gallery">ART GALLERY</a>
+      <Link to="/about">ABOUT ME</Link>
+      <Link to="/projects">PROJECTS</Link>
+      <Link to="/gallery">ART GALLERY</Link>
       <a href="#contact">CONTACT ME</a>
     </nav>
   </div>

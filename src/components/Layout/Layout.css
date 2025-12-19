@@ -7,9 +7,8 @@
   will-change: contents;
   height: auto;
   width: 100%;
-  position: relative;
+  position: fixed;
   opacity: 0;
-  margin: 1%;
   z-index: 1;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;

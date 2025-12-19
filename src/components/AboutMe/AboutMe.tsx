@@ -10,6 +10,7 @@ function AboutMe() {
           src= {backdrop}
           alt="decorative backdrop"
           className="backdrop-water"/>
+        <div className="top-layer">
         <img 
           src={longlightbulb} 
           alt="decorative light bulb" 
@@ -30,7 +31,6 @@ function AboutMe() {
           alt="decorative light bulb" 
           className="light-bulb4"
         />
-        <div className="top-layer">
         <div className="semi-circle">
           <img
           src= {name}

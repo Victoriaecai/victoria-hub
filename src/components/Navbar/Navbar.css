@@ -44,8 +44,21 @@
   text-decoration: none;
   font-size: 18px;
   color: #8B6540;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease;
   font-family: 'Eina01', sans-serif;
+  padding: 8px 16px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.navigation nav a:hover {
+  color: #5a3d2a;
+  background-color: rgba(139, 101, 64, 0.1);
+  transform: translateY(-2px);
+}
+
+.navigation nav a:active {
+  transform: translateY(0);
 }
 
 
