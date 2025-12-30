@@ -2,7 +2,7 @@ import AboutMe from './components/AboutMe/AboutMe.tsx';
 import Projects from './components/Projects/Projects.tsx';
 import ArtGallery from './components/ArtGallery/ArtGallery.tsx';
 import Layout from "./components/Layout/Layout.tsx";
-import './App.css'; // optional styling
+import './App.css'; 
 import { Routes, Route } from 'react-router-dom';
 
 function App() {

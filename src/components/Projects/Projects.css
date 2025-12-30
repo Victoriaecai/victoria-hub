@@ -8,10 +8,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .projects h2 {  
-  font-family: Eina01, sans-serif;
+  font-family: 'Pinyon Script', cursive;
   font-weight: 400;
   font-size: 5rem;
   color: #000;

@@ -2,6 +2,10 @@ import './Projects.css';
 import { useState } from 'react';
 import timetableBuilder from '../../assets/images/timetableBuilder.png';
 import JasonsDemo from '../../assets/videos/JasonsDemo.mp4';
+import columnsDemo from '../../assets/videos/columns_demo.mp4';
+import columnsPic from '../../assets/images/columns.png';
+import pickmechooseme from '../../assets/images/pickmechoosemewatchme.png';
+import { motion } from 'framer-motion';
 
 interface Project {
   id: number;
@@ -42,22 +46,21 @@ function Projects() {
     {
       id: 3,
       title: "Pick Me Choose Me Watch Me",
-      description: "Description of your third project. Showcase your skills and creativity here.",
-      shortDescription: "Interactive project demonstrating creative development skills.",
-      image: "/src/assets/images/logoBIG.png",
-      technologies: ["Tech 1", "Tech 2", "Tech 3"],
-      githubUrl: "https://github.com/yourusername/project3",
-      liveUrl: "https://yourproject3.com"
+      description: "Online streaming has granted us access to millions of movies on demand. However, faced with the seemingly unlimited choices, a new problem arises where none of the movies stand out. You don’t want to watch Crazy Rich Asiansfor the 20th time, so you scroll and scroll Netflix, but nothing peaks your interest. PickMeWatchMe outputs to the user a set of recommended films/shows titles based either on their an actor they want to watch OR based on their desired genre and runtime.",
+      shortDescription: "A web prototype that reccomends users movies based on their interests in actors, genres, etc.",
+      image: pickmechooseme,
+      technologies: ["Python", "Tkinter"],
+      githubUrl: "https://github.com/isabellazhong/Cinematch-"
     },
     {
       id: 4,
       title: "Columns",
       description: "Remake of Columns Game using MIPS Assembly Language.",
       shortDescription: "Classic Columns game recreated in MIPS Assembly.",
-      image: "/src/assets/images/logoBIG.png",
-      technologies: ["Tech 1", "Tech 2", "Tech 3"],
-      githubUrl: "https://github.com/yourusername/project3",
-      liveUrl: "https://yourproject3.com"
+      image: columnsPic,
+      technologies: ["MIPS Assembly"],
+      githubUrl: "https://github.com/Victoriaecai/Columns-Game",
+      videoUrl: columnsDemo
     }
   ];
 
@@ -72,10 +75,38 @@ function Projects() {
   return (
     <>
       <section id="projects" className="projects">
-        <h2>Projects</h2>
-        <div className="projects-grid">
+        <motion.h2
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Projects
+        </motion.h2>
+        <motion.div
+          className="projects-grid"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2
+              }
+            }
+          }}
+        >
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
+            <motion.div
+              key={project.id}
+              className="project-card"
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
               </div>
@@ -105,14 +136,27 @@ function Projects() {
                   )}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {selectedProject && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <motion.div
+          className="modal-overlay"
+          onClick={closeModal}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <motion.div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <button className="modal-close" onClick={closeModal}>×</button>
             <h2>{selectedProject.title}</h2>
             <div className="modal-video-container">
@@ -136,8 +180,8 @@ function Projects() {
                 View on GitHub
               </a>
             )}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </>
   );

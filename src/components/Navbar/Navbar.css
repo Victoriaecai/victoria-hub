@@ -16,7 +16,7 @@
 .nav-center {
   position: absolute;
   left: 50%;
-  transform: translateX(-60%);
+  transform: translateX(-55%);
   display: flex;
   gap: 2rem;
   z-index: 1;

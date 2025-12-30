@@ -1,10 +1,11 @@
 import './ArtGallery.css';
 import jellyfish from '../../assets/images/jellyfish.jpg';
 import fan from '../../assets/images/fan.jpg';
-import duck from '../../assets/images/duck.mp4';
+import duck from '../../assets/videos/duck.mp4';
 import cherryBlossom from '../../assets/images/cherryblossoms.png';
 import bunnySandwich from '../../assets/images/bunnysandwich.png';
 import fish from '../../assets/images/fish.png';
+import { motion } from 'framer-motion';
 
 function ArtGallery() {
   const artPieces = [
@@ -54,19 +55,49 @@ function ArtGallery() {
 
   return (
     <div className="art-gallery">
-      <h2>Art Gallery</h2>
-      <p className="gallery-description">
+      <motion.h2
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Art Gallery
+      </motion.h2>
+      <motion.p
+        className="gallery-description"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         Explore my collection of digital art illustrations!
-      </p>
+      </motion.p>
 
-      <div className="gallery-grid">
+      <motion.div
+        className="gallery-grid"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.1
+            }
+          }
+        }}
+      >
         {artPieces.map((art) => (
-          <a
+          <motion.a
             key={art.id}
             href={art.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="art-card-link"
+            variants={{
+              hidden: { opacity: 0, scale: 0.8 },
+              visible: { opacity: 1, scale: 1 }
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="art-card">
               <div className="art-image-container">
@@ -89,9 +120,9 @@ function ArtGallery() {
                 )}
               </div>
             </div>
-          </a>
+          </motion.a>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

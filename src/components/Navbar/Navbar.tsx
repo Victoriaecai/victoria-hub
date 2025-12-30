@@ -14,7 +14,6 @@ function Navbar() {
       <Link to="/about">ABOUT ME</Link>
       <Link to="/projects">PROJECTS</Link>
       <Link to="/gallery">ART GALLERY</Link>
-      <a href="#contact">CONTACT ME</a>
     </nav>
   </div>
 </div>

@@ -1,0 +1,105 @@
+.contact-me {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 120px 80px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-me h2 {
+  font-family: 'Pinyon Script', cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  color: #000;
+  margin-bottom: 0px;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.contact-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-content p {
+  font-family: Eina01, sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-family: Eina01, sans-serif;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: Eina01, sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: Eina01, sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-family: Eina01, sans-serif;
+  font-size: 1.2rem;
+  color: #007bff;
+}
