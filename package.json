@@ -21,9 +21,12 @@
   "dependencies": {
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "@types/react-youtube": "^7.6.2",
+    "framer-motion": "^12.23.26",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.5",
+    "react-youtube": "^10.1.0"
   },
   "description": "My portfolio site!",
   "main": "eslint.config.js",
