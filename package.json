@@ -22,7 +22,7 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@types/react-youtube": "^7.6.2",
-    "framer-motion": "^12.23.26",
+    "framer-motion": "^12.27.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.5",

@@ -5,6 +5,7 @@ import JasonsDemo from '../../assets/videos/JasonsDemo.mp4';
 import columnsDemo from '../../assets/videos/columns_demo.mp4';
 import columnsPic from '../../assets/images/columns.png';
 import pickmechooseme from '../../assets/images/pickmechoosemewatchme.png';
+import victoriaHub from '../../assets/images/victoriahub.png';
 import { motion } from 'framer-motion';
 
 interface Project {
@@ -38,7 +39,7 @@ function Projects() {
       title: "Victoria Hub",
       description: "A personal portfolio website built with React and TypeScript.",
       shortDescription: "Personal portfolio website showcasing projects and artwork.",
-      image: "/src/assets/images/logoBIG.png",
+      image: victoriaHub,
       technologies: ["React", "TypeScript", "CSS", "Vite"],
       githubUrl: "https://github.com/Victoriaecai/victoria-hub",
       liveUrl: "https://victoriaecai.github.io/victoria-hub/"
