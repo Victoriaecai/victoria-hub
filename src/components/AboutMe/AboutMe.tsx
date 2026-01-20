@@ -1,5 +1,4 @@
 import './AboutMe.css'; 
-import lightbulb from '../../assets/images/lightbulb.png';
 import longlightbulb from '../../assets/images/longlightbulb.png';
 import lightbulbdark from '../../assets/images/lightbulbdark.png';
 function AboutMe() {
