@@ -1,6 +1,6 @@
 import './AboutMe.css'; 
 import longlightbulb from '../../assets/images/longlightbulb.png';
-import backdrop from '../../assets/images/backdropportfolio.png';
+import backdrop from '../../assets/images/backdrop.png';
 import name from '../../assets/images/nameportfolio.png';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
