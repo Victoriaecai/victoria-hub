@@ -191,23 +191,23 @@
 }
 
 .email-btn {
-  background: linear-gradient(45deg, #00CED1, #008B8B);
+  background: linear-gradient(45deg, #000000, #00066e);
 }
 
 .linkedin-btn {
-  background: linear-gradient(45deg, #20B2AA, #008080);
+  background: linear-gradient(45deg, #0c0629, #200080);
 }
 
 .instagram-btn {
-  background: linear-gradient(45deg, #48D1CC, #3eafb1);
+  background: linear-gradient(45deg, #000280, #2a4181);
 }
 
 .github-btn {
-  background: linear-gradient(45deg, #5F9EA0, #20B2AA);
+  background: linear-gradient(45deg, #3254ba, #36b1c4);
 }
 
 .resume-btn {
-  background: linear-gradient(45deg, #62a7c7, #20B2AA);
+  background: linear-gradient(45deg, #2f86b2, #58b5cf);
 }
 
 .email-popup-overlay {
