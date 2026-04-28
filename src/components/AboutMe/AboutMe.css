@@ -199,11 +199,15 @@
 }
 
 .instagram-btn {
-  background: linear-gradient(45deg, #48D1CC, #00CED1);
+  background: linear-gradient(45deg, #48D1CC, #3eafb1);
 }
 
 .github-btn {
   background: linear-gradient(45deg, #5F9EA0, #20B2AA);
+}
+
+.resume-btn {
+  background: linear-gradient(45deg, #62a7c7, #20B2AA);
 }
 
 .email-popup-overlay {

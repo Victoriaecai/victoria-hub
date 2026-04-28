@@ -98,6 +98,7 @@ function AboutMe() {
             <a href="https://linkedin.com/in/victoriacai-" target="_blank" rel="noopener noreferrer" className="social-btn linkedin-btn">LinkedIn</a>
             <a href="https://instagram.com/vera_phina" target="_blank" rel="noopener noreferrer" className="social-btn instagram-btn">Instagram</a>
             <a href="https://github.com/victoriaecai" target="_blank" rel="noopener noreferrer" className="social-btn github-btn">GitHub</a>
+            <a href="https://drive.google.com/file/d/1blTkynYkPbk5uHcpnttMEWJIjWQUCmb-/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="social-btn resume-btn">Resume</a>
           </div>
         </motion.div>
       </section>
