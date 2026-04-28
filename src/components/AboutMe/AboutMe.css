@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
 }
 .backdrop-water{
   position: relative;
@@ -72,6 +71,7 @@
   min-width: 900px;   
   height: auto;
   max-height: 1000px;  
+  overflow-x: hidden;
 }
 
 .light-bulb3 {
