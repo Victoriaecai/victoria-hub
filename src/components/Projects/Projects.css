@@ -1,15 +1,15 @@
 .projects {
   background-color: #ffffff;
   width: 100%;
-  padding: clamp(20px, 5vw, 80px);
   min-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 5%;
+  padding-bottom: 2%;
 }
 
 .projects h2 {  
@@ -24,7 +24,6 @@
 
 .projects-grid {
   max-width: 1200px;
-  padding: 80px clamp(20px, 5vw, 80px);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
@@ -67,7 +66,6 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  flex: 1;
 }
 
 .project-title {
@@ -137,11 +135,7 @@
   color: white;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .projects {
-    padding: clamp(20px, 5vw, 80px);
-  }
 
   .projects h2 {
     font-size: 3rem;
@@ -180,7 +174,7 @@
 
 @media (max-width: 480px) {
   .projects {
-    padding: 60px 20px;
+    padding-bottom: 5%;
   }
 
   .projects h2 {
@@ -188,7 +182,6 @@
   }
 }
 
-/* Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
